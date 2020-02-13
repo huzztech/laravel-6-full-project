@@ -1,0 +1,2 @@
+
+<?php echo $__env->make('layouts.admin', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\wamp64\www\l6app\resources\views/home.blade.php ENDPATH**/ ?>

@@ -1,0 +1,1 @@
+<a href='<?php echo e(url("verify/$user->email/$user->verifyToken")); ?>'>Click here</a> to verify<?php /**PATH D:\wamp64\www\l6app\resources\views/auth/verifyuser.blade.php ENDPATH**/ ?>
