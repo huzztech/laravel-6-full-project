@@ -1,0 +1,124 @@
+/* Footer Area css
+============================================================================================ */
+.footer_area{
+	background-image: url(../img/footer-bg.png);
+	background-size: cover;
+	padding-top: 290px;
+    padding-bottom: 120px;
+}
+.footer_inner{
+	
+}
+.f_widget{}
+.f_title{
+	margin-bottom: 35px;
+	h3{
+		color: #000;
+		font-size: 20px;
+		font-weight: bold;
+		font-family: $title-font;
+		margin-bottom: 0px;
+	}
+}
+.ab_widget{
+	p{
+		font-size: 14px;
+		line-height: 24px;
+		font-family: $primary-font;
+		color: $text-color;
+		margin-bottom: 30px;
+		a{
+			color: $primary-color;
+		}
+		& + p{
+			margin-bottom: 0px;
+		}
+	}
+}
+.news_widget{
+	padding-left: 15px;
+	p{
+		font-size: 14px;
+		line-height: 24px;
+		font-family: $primary-font;
+		color: $text-color;
+		margin-bottom: 15px;
+	}
+	.input-group{
+		position: relative;
+		width: 90%;
+		input{
+			height: 50px;
+			background: #fff;
+			border-radius: 50px;
+			width: 100%;
+			border: none;
+			padding: 0px 15px;
+			font-size: 14px;
+			font-family: $primary-font;
+			color: #cccccc;
+			outline: none;
+			box-shadow: none;
+			@include placeholder{
+				font-size: 14px;
+				font-family: $primary-font;
+				font-weight: normal;
+				color: #cccccc;
+			}
+		}
+		.sub-btn{
+			position: absolute;
+			right: 4px;
+			top: 2px;
+			border-radius: 50px;
+			@extend .gradient-bg;
+			outline: none !important;
+			box-shadow: none !important;
+			padding: 0px;
+			width: 46px;
+			height: 46px;
+			cursor: pointer;
+			color: #fff;
+		}
+	}
+}
+.social_widget{
+	p{
+		font-size: 14px;
+		line-height: 24px;
+		font-family: $primary-font;
+		color: $text-color;
+		margin-bottom: 10px;
+	}
+	.list{
+		li{
+			margin-right: 17px;
+			display: inline-block;
+			a{
+				color: #cccccc;
+				font-size: 14px;
+				@include transition;
+			}
+			&:last-child{
+				margin-right: 0px;
+			}
+			&:hover{
+				a{
+					color: $primary-color;
+				}
+			}
+		}
+	}
+}
+.copy_right_text{
+	text-align: center;
+	margin-top: 60px;
+	p{
+		a{
+			color: $primary-color;
+		}
+	}
+}
+
+/* End Footer Area css
+============================================================================================ */

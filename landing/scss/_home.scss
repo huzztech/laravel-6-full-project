@@ -1,0 +1,488 @@
+/* Start Features Area css
+============================================================================================ */
+
+.features_area{
+    .main_title{
+        .primary_btn{
+            margin-top: 30px!important;
+        }
+    }
+}
+
+.single_feature{
+    padding: 30px 0;
+    border-bottom: 1px solid #eeeeee;
+    &:last-child{
+        border-bottom: 0;
+    }
+    .feature_head{
+        position: relative;
+        margin-bottom: 15px;
+        span.lnr{
+            position: absolute;
+            left: 0;
+            top: -1px;
+            font-size: 30px;
+            color: $title-color;
+        }
+        h4{
+            font-size: 20px;
+            color: $title-color;
+            display: inline-block;
+            padding-left: 60px;
+        }
+    }
+    .feature_content{
+        p{
+            margin: 0;
+        }
+    }
+}
+
+/* End Features Area css
+============================================================================================ */
+
+
+/* Recent Update Area css
+============================================================================================ */
+
+.recent_update_area {
+    background-image: url(../img/tab-bg.jpg);
+    background-size: cover;
+    padding: 290px 0;
+    &.made_white {
+        background: #fff;
+    }
+}
+
+.recent_update_inner {
+    .nav.nav-tabs {
+        border: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+        border-bottom: 1px solid #eda2f0;
+        padding-bottom: 1px;
+        li {
+            flex: 0 0 25%;
+            max-width: 195px;
+            padding: 0px 15px;
+            a {
+                border: none;
+                padding: 25px 0px;
+                background: #fff;
+                text-align: center;
+                line-height: 60px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                font-size: 12px;
+                font-family: $primary-font;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: #000000;
+                span.lnr{
+                    font-size: 30px;
+                    font-weight: 600;
+                    @extend .gradient-color;
+                    @include transition();
+                }
+                &.active,
+                &:hover {
+                    @extend .gradient-bg;
+                    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+                    color: #fff;
+                    span.lnr{
+                        @include gradient(90deg, #fff, #fff);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+            
+            h6{
+                letter-spacing: 1px;
+                margin-top: -10px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .tab-content {
+        .tab-pane {
+            border: none;
+            padding-top: 80px;
+        }
+    }
+}
+
+.recent_update_text {
+    .col-lg-5 {
+        vertical-align: middle;
+        align-self: center;
+    }
+    h3 {
+        color: $title-color;
+        line-height: 45px;
+        font-size: 36px;
+        font-family: $title-font;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    h6 {
+        color: $title-color;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: $primary-font;
+    }
+    p {
+        margin-bottom: 0px;
+    }
+    .primary_btn {
+        margin-top: 35px;
+    }
+}
+
+.common_style{
+    .line{
+        position: relative;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        &:after{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 1px;
+            width: 50px;
+            content: "";
+            @extend .gradient-bg;
+        }
+    }
+    h3{
+        font-size: 36px;
+        color: $title-color;
+        font-family: $title-font;
+        margin-bottom: 20px;
+    }
+    p{
+        margin: 0;
+    }
+    .primary_btn{
+        margin-top: 35px;
+    }
+}
+/* Recent Update Area css
+============================================================================================ */
+
+
+
+/* Start Big Features Area css
+============================================================================================ */
+
+.big_features{
+    .common_style{
+        p{
+            padding-right: 20px;
+        }
+    }
+}
+.features_content{
+    position: relative;
+    .border-line {
+        position: absolute;
+        left: 50%;
+        height: 100%;
+        border: 1px dashed #dbdade;
+    }
+    .shape1 {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        margin-left: -8px;
+    }
+    .shape2 {
+        position: absolute;
+        left: 48%;
+        top: 47%;
+        margin-left: -15px;
+    }
+    .shape3 {
+        position: absolute;
+        left: 50%;
+        top: 62%;
+        margin-left: -9px;
+    }
+}
+.bottom-features{
+    margin-top: 120px;
+    .shape3 {
+        top: 64%;
+    }
+}
+
+/* End Big Features Area css
+============================================================================================ */
+
+/* Price Area css
+============================================================================================ */
+.price_area{
+    background-image: url(../img/pricing-bg.png);
+    background-size: cover;
+    padding-top: 290px;
+
+}
+.price_inner{
+	
+}
+.price_item{
+	text-align: center;
+	border: 2px solid #eeeeee;
+    border-radius: 5px;
+    background: #fff;
+    position: relative;
+    @include transition();
+	.price_head{
+		text-align: center;
+		background: #ffffff;
+		padding: 35px 0px;
+		border-bottom: 1px solid #eeeeee;
+		h4{
+			font-size: 20px;
+			color: $title-color;
+            margin-bottom: 0px;
+            font-family: $title-font;
+		}
+	}
+	.price_body{
+        padding: 30px 0px;
+        background: #fff;
+        @include transition();
+		ul{
+			li{
+				margin-bottom: 15px;
+				a{
+					font-size: 14px;
+					color: #666666;
+					font-family: $primary-font;
+					font-weight: normal;
+				}
+				&:last-child{
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
+	.price_footer{
+        background: #fcf8ff;
+		max-width: 280px;
+		margin: 0px auto 40px;
+		border-radius: 5px;
+		padding-top: 35px;
+		padding-bottom: 40px;
+		h3{
+			color: $title-color;
+			font-size: 72px;
+			.dlr{
+				font-size: 24px;
+				vertical-align: top;
+				padding-top: 14px;
+                display: inline-block;
+                margin-right: -10px;
+			}
+			.month{
+				font-size: 14px;
+				color: $primary-font;
+				font-family: $title-color;
+				display: inline-block;
+				text-align: left;
+			}
+		}
+		
+	}
+	&:hover{
+        background: #fcf8ff;
+        border: double 2px transparent;
+        border-radius: 5px;
+        background-image: linear-gradient(white, white), radial-gradient(circle at top left, $primary-color,$primary-color2);
+        background-image: -webkit-linear-gradient(white, white), -webkit-radial-gradient(circle at top left, $primary-color,$primary-color2);
+        background-image: -moz-linear-gradient(white, white), -moz-radial-gradient(circle at top left,$primary-color,$primary-color2);
+        background-image: -ms-linear-gradient(white, white), -ms-radial-gradient(circle at top left, $primary-color,$primary-color2);
+        background-image: -o-linear-gradient(white, white), -o-radial-gradient(circle at top left, $primary-color,$primary-color2);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+		.price_head{
+			@extend .gradient-bg;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			h4{
+				color: #fff;
+			}
+        }
+        .price_body{
+            background: #fcf8ff;
+        }
+		.price_footer{
+			@extend .gradient-bg;
+			box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+			h3{
+				color: #fff;
+				.month{
+					color: #fff;
+				}
+			}
+			.primary_btn{
+                background-image: linear-gradient(to right, $primary-color 0%, $primary-color2 100%), radial-gradient(circle at top left, $primary-color,$primary-color2);
+                background-image: -webkit-linear-gradient(to right, $primary-color 0%, $primary-color2 100%), -webkit-radial-gradient(circle at top left, $primary-color,$primary-color2);
+                background-image: -moz-linear-gradient(to right, $primary-color 0%, $primary-color2 100%), -moz-radial-gradient(circle at top left, $primary-color,$primary-color2);
+                background-image: -ms-linear-gradient(to right, $primary-color 0%, $primary-color2 100%), -ms-radial-gradient(circle at top left, $primary-color,$primary-color2);
+                background-image: -o-linear-gradient(to right, $primary-color 0%, $primary-color2 100%), -o-radial-gradient(circle at top left, $primary-color,$primary-color2);
+				background: #fff;
+				color: $title-color;
+			}
+		}
+	}
+}
+/* End Price Area css
+============================================================================================ */
+
+/* Start Testimonial Area css
+============================================================================================ */
+.features_page{
+    &.testimonial_area{
+        padding-top: 320px;
+    }
+}
+
+.testimonial_area {
+    .active_testimonial{
+        .owl-dots{
+            @extend .gradient-bg;
+            height: 100px;
+            width: 25px;
+            position: absolute;
+            right: -52%;
+            top: 37%;
+            border-radius: 50px;
+            div{
+                height: 15px;
+                width: 15px;
+                background: #cda2f8;
+                margin: 5px;
+                border-radius: 50%;
+                margin-top: 8px;
+                &.active{
+                    background: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+.single_testimonial {
+    .testimonial_head {
+        text-align: center;
+        img {
+            margin: 0 auto 10px;
+            width: auto;
+        }
+        h4 {
+            margin-bottom: 10px;
+            color: #000;
+        }
+        .review {
+            i.fa {
+                color: #ffc000;
+            }
+        }
+    }
+    .testimonial_content {
+        margin-top: 30px;
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            font-style: italic;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+/* End Testimonial Area css
+============================================================================================ */
+
+/* Start Brand Area css
+============================================================================================ */
+.brand-carousel {
+    .single-brand-item {
+        background: #fcf8ff;
+        height: 130px;
+        width: 170px;
+        cursor: pointer;
+        @media only screen and (max-width: 767px){
+            height: 100px;
+            width: 140px;
+        }
+        .d-table-cell{
+            vertical-align: middle;
+        } 
+        img {
+            @include filter(100%);
+            max-width: 80px;
+            margin: 0 auto;
+            @media only screen and (max-width: 767px){
+                max-width: 100px;
+            }
+        }
+        &:hover{
+            img{
+                @include filter(0%);
+                @include transition();
+            }  
+        }   
+    }
+}
+
+/* End Brand Area css
+============================================================================================ */
+
+/* Impress Area css
+============================================================================================ */
+.impress_area{
+    background-image: url(../img/impress-bg.png);
+    background-size: cover;
+    padding: 290px 0 320px;
+    margin-bottom: -200px;
+	.impress_inner{
+		text-align: center;
+		max-width: 780px;
+		margin: auto;
+		h2{
+			color: #fff;
+			font-size: 36px;
+			font-family: $title-font;
+			font-weight: bold;
+			margin-bottom: 18px;
+		}
+		p{
+			color: #fff;
+			margin-bottom: 35px;
+		}
+		.primary_btn{
+            background: #fff;
+			width: auto;
+			font-size: 14px;
+            box-shadow: -14.142px 14.142px 20px 0px rgba(0, 0, 0, 0.1);
+            border-color: #fff;
+            &:hover{
+                color: #fff;
+                background: transparent;
+                border-color: #fff;
+                &:after{
+                    @include border-gradient(0deg, #fff, #fff);
+                }
+            }
+		}
+	}
+}
+/* End Impress Area css
+============================================================================================ */

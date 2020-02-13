@@ -1,0 +1,173 @@
+/* Home Banner Area css
+============================================================================================ */
+
+.home_banner_area {
+    z-index: 1;
+    background: url(../img/banner/home-banner.png) no-repeat right center;
+    background-size: cover;
+    .banner_inner {
+        width: 100%;
+        .home_right_img {
+            padding-top: 260px;			
+            padding-bottom: 142px;
+        }
+        .col-lg-5 {
+            vertical-align: middle;
+            align-self: center;
+        }
+        .banner_content {
+            text-align: left;
+			color: #fff;
+            h2 {
+                margin-top: 0px;
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 54px;
+                margin-bottom: 20px;
+            }
+            p {
+				color: #fff;
+				font-size: 14px;
+                margin-bottom: 20px;
+            }
+            .primary_btn{
+                border-color: #fff;
+                background: rgba(255, 255, 255, 0.1);
+                color: #fff;
+                margin-right: 30px;
+                &:hover{
+                    background: #fff;
+                    color: $title-color;
+                }
+
+            }
+            .watch_video {
+                margin: 0 30px;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.blog_banner {
+    min-height: 780px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-bottom: 0px;
+    .banner_inner {
+        background: #04091e;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        min-height: 780px;
+        z-index: 1;
+        .overlay {
+            background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;
+            opacity: .5;
+            height: 125%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            z-index: -1;
+        }
+        .blog_b_text {
+            max-width: 700px;
+            margin: auto;
+            color: #fff;
+            margin-top: 40px;
+            h2 {
+                font-size: 60px;
+                font-weight: 500;
+                font-family: $primary-font;
+                line-height: 66px;
+                margin-bottom: 15px;
+            }
+            p {
+                font-size: 16px;
+                margin-bottom: 35px;
+            }
+            .white_bg_btn {
+                line-height: 42px;
+                padding: 0px 45px;
+            }
+        }
+    }
+}
+
+.banner_box {
+    max-width: 1620px;
+    margin: auto;
+}
+
+.banner_area {
+    position: relative;
+    z-index: 1;
+    min-height: 400px;
+    .banner_inner {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        min-height: 400px;
+        background-image: url(../img/banner/common-banner.png);
+        background-size: cover;
+        z-index: 1;
+        //		.overlay{
+        //			background: url(../img/banner/banner.jpg) no-repeat scroll center center;
+        //			position: absolute;
+        //			left: 0;
+        //			right: 0;
+        //			top: 0;
+        //			height: 125%;
+        //			bottom: 0;
+        //			z-index: -1;
+        //			opacity: 1;
+        //		}
+        .banner_content {
+            h2 {
+                color: #fff;
+                font-size: 36px;
+                font-family: $title-font;
+                margin-bottom: 0px;
+                text-transform: capitalize;
+                font-weight: bold;
+            }
+            .page_link {
+                a {
+                    font-size: 14px;
+                    color: #fff;
+                    font-family: $primary-font;
+                    margin-right: 32px;
+                    position: relative;
+                    &:before {
+                        content: "\e87a";
+                        font-family: 'Linearicons-Free';
+                        font-size: 14px;
+                        position: absolute;
+                        right: -25px;
+                        top: 54%;
+                        @include transform(translateY(-50%));
+                    }
+                    &:last-child {
+                        margin-right: 0px;
+                        &:before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* End Home Banner Area css
+============================================================================================ */
+
+
+/* Start Common Banner Area css
+============================================================================================ */
+.banner_area{
+    
+}

@@ -1,0 +1,197 @@
+.section_gap {
+    padding: 120px 0;
+    @media (max-width:991px){
+        padding: 80px 0;
+    }
+}
+
+.section_gap_top {
+    padding-top: 120px;
+    @media (max-width: 991px) {
+        padding-top: 80px;
+    }
+}
+
+.section_gap_bottom {
+    padding-bottom: 120px;
+    @media (max-width: 991px) {
+        padding-bottom: 80px;
+    }
+}
+
+/* Main Title Area css
+============================================================================================ */
+
+.main_title {
+    text-align: center;
+    margin-bottom: 75px;
+    @media (max-width:767px){
+        margin-bottom: 40px;
+    }
+    h2 {
+        font-family: $title-font;
+        font-size: 36px;
+        color: #000;
+        font-weight: 600;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+    }
+    p {
+        font-size: 14px;
+        font-family: $primary-font;
+        line-height: 24px;
+        color: $text-color;
+        margin-bottom: 0px;
+       
+        margin: auto;
+    }
+    &.white {
+        h2 {
+            color: #fff;
+        }
+        p {
+            color: #fff;
+            opacity: .6;
+        }
+    }
+    .top_title{
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+}
+
+/* End Main Title Area css
+============================================================================================ */
+
+/* Start Gradient Area css
+============================================================================================ */
+
+.gradient-bg {
+    @include gradient(90deg, $primary-color 0%, $primary-color2 100%);
+}
+
+.border-gradient{
+    @include border-gradient(90deg, $primary-color 0%, $primary-color2 100%);
+}
+
+.gradient-bg2 {
+    @include gradient(90deg, $primary-color 0%, $primary-color2 100%);
+}
+
+.gradient-color {
+    @include gradient(90deg, $primary-color 0%, $primary-color2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* End Gradient Area css
+============================================================================================ */
+
+.primary_btn {
+    display: inline-block;
+	color: #22195e;
+	letter-spacing: 1px;
+    font-family: $primary-font;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 47px;
+    outline: none !important;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: double 2px transparent;
+    border-radius: 5px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, $primary-color,$primary-color2);
+    background-image: -webkit-linear-gradient(white, white), -webkit-radial-gradient(circle at top left, $primary-color,$primary-color2);
+    background-image: -moz-linear-gradient(white, white), -moz-radial-gradient(circle at top left,$primary-color,$primary-color2);
+    background-image: -ms-linear-gradient(white, white), -ms-radial-gradient(circle at top left, $primary-color,$primary-color2);
+    background-image: -o-linear-gradient(white, white), -o-radial-gradient(circle at top left, $primary-color,$primary-color2);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    span{
+        padding: 0 35px;
+    }
+    &:hover {
+        background-image: linear-gradient(to right, $primary-color 0%, $primary-color2 100%), radial-gradient(circle at top left, $primary-color,$primary-color2);
+        background-image: -webkit-linear-gradient(to right, $primary-color 0%, $primary-color2 100%), -webkit-radial-gradient(circle at top left, $primary-color,$primary-color2);
+        background-image: -moz-linear-gradient(to right, $primary-color 0%, $primary-color2 100%), -moz-radial-gradient(circle at top left, $primary-color,$primary-color2);
+        background-image: -ms-linear-gradient(to right, $primary-color 0%, $primary-color2 100%), -ms-radial-gradient(circle at top left, $primary-color,$primary-color2);
+        background-image: -o-linear-gradient(to right, $primary-color 0%, $primary-color2 100%), -o-radial-gradient(circle at top left, $primary-color,$primary-color2);
+        color: #fff;
+        box-shadow: 0px 10px 30px rgba(130, 82, 250, 0.2);
+        border: 2px solid transparent;
+    }
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Start Video Play css
+============================================================================================ */
+
+.video-play-button {
+    position: relative;
+    box-sizing: content-box;
+    display: inline-block;
+    width: 32px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 46px 8px 18px 28px;
+    &:before, &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        @include transform(translate(-50%, -50%));
+        display: block;
+        width: 60px;
+        height: 60px;
+        @include gradient(90deg, #e93d88 0%,  #e5935a 100%);
+        border-radius: 50%;
+    }
+    &:before {
+        z-index: 0;
+        @include animation(pulse-border 2000ms ease-out infinite);
+    }
+    &:after {
+        z-index: 1;
+        @include transition(all 200ms ease);
+    }
+    span {
+        display: block;
+        position: relative;
+        z-index: 3;
+        width: 0;
+        height: 0;
+        border-left: 16px solid #ffffff;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+    }
+    &:hover {
+        &:after {
+            background-color: darken($primary-color, 10%);
+        }
+    }
+}
+
+@include keyframes(pulse-border) {
+    0% {
+        @include transform(translate(-50%, -50%) translateZ(0) scale(1));
+        opacity: .7;
+    }
+    100% {
+        @include transform(translate(-50%, -50%) translateZ(0) scale(1.5));
+        opacity: 0.1;
+    }
+}
+/* End Video Play css
+============================================================================================ */
+
+
