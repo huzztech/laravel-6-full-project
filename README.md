@@ -2,10 +2,25 @@
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
+  <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
+
+## Laravel 6 Full Project
+
+- Login User
+- Authentication
+- Register User
+- Reset Password
+- Email Verification
+- Create record in database through forms
+- Update record in database through forms
+- Delete record through forms.
+- Search and view the record.
+- Laravel admin panel.
+- Blade Template
+- View Record in tables
 
 ## About Laravel
 
