@@ -10,17 +10,39 @@
 ## Laravel 6 Full Project
 
 - Login User
-- Authentication
+- [Authentication](https://laravel.com/docs/6.0/authentication)
 - Register User
 - Reset Password
-- Email Verification
+- [Email Verification](https://laravel.com/docs/6.0/verification)
 - Create record in database through forms
 - Update record in database through forms
 - Delete record through forms.
 - Search and view the record.
 - Laravel admin panel.
-- Blade Template
+- [Blade Template](https://laravel.com/docs/6.0/blade)
 - View Record in tables
+- API
+- [Filesystem](https://laravel.com/docs/6.0/filesystem)
+- [Mail](https://laravel.com/docs/6.0/mail)
+- [Migrations](https://laravel.com/docs/6.0/migrations)
+- [Policies](https://laravel.com/docs/6.0/authorization)
+- [Providers](https://laravel.com/docs/6.0/providers)
+- [Requests](https://laravel.com/docs/6.0/validation#form-request-validation)
+- [Seeding & Factories](https://laravel.com/docs/6.0/seeding)
+- [Testing](https://laravel.com/docs/6.0/testing)
+
+Beside Laravel, this project uses other tools like:
+
+- [Bootstrap 4](https://getbootstrap.com/)
+- [Font Awesome](http://fontawesome.io/)
+- Javascript
+
+## Installation
+
+- Local php server
+- Php global
+- Composer
+- Import database file from db_for_import folder
 
 ## About Laravel
 
