@@ -10,18 +10,18 @@
 ## Laravel 6 Full Project
 
 - Login User
-- [Authentication](https://laravel.com/docs/6.0/authentication)
 - Register User
 - Reset Password
-- [Email Verification](https://laravel.com/docs/6.0/verification)
 - Create record in database through forms
 - Update record in database through forms
 - Delete record through forms.
 - Search and view the record.
 - Laravel admin panel.
-- [Blade Template](https://laravel.com/docs/6.0/blade)
 - View Record in tables
 - API
+- [Blade Template](https://laravel.com/docs/6.0/blade)
+- [Email Verification](https://laravel.com/docs/6.0/verification)
+- [Authentication](https://laravel.com/docs/6.0/authentication)
 - [Filesystem](https://laravel.com/docs/6.0/filesystem)
 - [Mail](https://laravel.com/docs/6.0/mail)
 - [Migrations](https://laravel.com/docs/6.0/migrations)
