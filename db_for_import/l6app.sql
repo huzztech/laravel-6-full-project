@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 13, 2020 at 12:26 PM
+-- Generation Time: Feb 14, 2020 at 08:13 AM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -339,6 +339,13 @@ CREATE TABLE IF NOT EXISTS `sessions` (
   UNIQUE KEY `sessions_id_unique` (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `sessions`
+--
+
+INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
+('04teIL8fpWDSiO80jJ3zxEk3BPuRwdoH5glvgiC8', 1, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36', 'YTo2OntzOjY6ImxvY2FsZSI7czoyOiJlbiI7czo2OiJfdG9rZW4iO3M6NDA6IndIZFRIbk14WHZLUUhIRWF1S0lmbE50QjZ1R2F3Znc0QmdaQkVqeUYiO3M6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjQ1OiJodHRwOi8vbG9jYWxob3N0L2w2YXBwL2hvbWUvcHJvZ3JhbS9zaW5nbGUvOHYiO31zOjM6InVybCI7YTowOnt9czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9', 1581667659);
+
 -- --------------------------------------------------------
 
 --
@@ -359,7 +366,7 @@ CREATE TABLE IF NOT EXISTS `units` (
 --
 
 INSERT INTO `units` (`id`, `seller_id`, `name`, `ent_date`) VALUES
-(1, 1, 'Test Unit', '2019-03-14 10:59:04');
+(1, 1, 'Test Origin', '2019-03-14 10:59:04');
 
 -- --------------------------------------------------------
 
@@ -384,7 +391,14 @@ CREATE TABLE IF NOT EXISTS `users` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `users_email_unique` (`email`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `password`, `dob`, `status`, `company_id`, `user_type`, `master`, `verifyToken`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'HuzzTech', 'huzztech1@gmail.com', '$2y$10$c1nBZ0lW2QY4cW3InCg7BeEXwniFLU4Tnbe1kVY5g8QHINnZjQ0/u', '2020-12-31', 1, 0, 'user', '0', '', NULL, '2020-02-14 00:50:28', '2020-02-14 00:51:11');
 
 -- --------------------------------------------------------
 
@@ -400,18 +414,19 @@ CREATE TABLE IF NOT EXISTS `weaving_extras` (
   `type` varchar(255) CHARACTER SET utf8 NOT NULL DEFAULT 'warp count',
   `ent_date` timestamp NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `weaving_extras`
 --
 
 INSERT INTO `weaving_extras` (`id`, `seller_id`, `name`, `type`, `ent_date`) VALUES
-(1, 3, '5080', 'warp count', '2019-12-14 09:41:20'),
-(18, 3, 'test warp', 'warp type', '2019-12-14 09:56:25'),
-(20, 3, 'Red cotton', 'warp blend', '2019-12-14 09:57:27'),
-(28, 3, 'test fabric', 'fabric type', '2019-12-14 10:01:19'),
-(36, 3, 'test selvedge', 'selvedge', '2019-12-14 10:02:35');
+(1, 3, 'E-Commerce', 'web_type', '2019-12-14 09:41:20'),
+(18, 3, 'Local', 'l_f', '2019-12-14 09:56:25'),
+(20, 3, 'PHP', 'language', '2019-12-14 09:57:27'),
+(44, 3, 'Simple', 'web_type', '2019-12-14 09:41:20'),
+(45, 3, 'Foreign', 'l_f', '2019-12-14 09:56:25'),
+(46, 3, 'JAVA', 'language', '2019-12-14 09:57:27');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
