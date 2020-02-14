@@ -112,12 +112,6 @@ class ProgramController extends Controller
             "weft4_count"=> $request->weft4_count,
             "weft4_yarn_type"=> $request->weft4_yarn_type,
             "weft4_yarn_blend"=> $request->weft4_yarn_blend,
-            "w_end"=> $request->w_end,
-            "w_pick"=> $request->w_pick,
-            "w_width"=> $request->w_width,
-            "w_fabric_type"=> $request->w_fabric_type,
-            "w_selvedge"=> $request->w_selvedge,
-            "w_writing"=> $request->w_writing,
             "change_by"=> $useris->id,
             "remarks"=> $request->remarks,
             "set_date"=> $request->set_date,
@@ -158,42 +152,30 @@ class ProgramController extends Controller
 
         $w_extras1     =  Weaving_extra::where([
 
-            ['type', '=',  'warp count'],
+            ['type', '=',  'web_type'],
 
             ])->get();
 
 
         $w_extras2     =  Weaving_extra::where([
 
-            ['type', '=',  'warp type'],
+            ['type', '=',  'l_f'],
 
             ])->get();
 
 
         $w_extras3     =  Weaving_extra::where([
 
-            ['type', '=',  'warp blend'],
+            ['type', '=',  'language'],
 
             ])->get();
 
-
-        $w_extras4     =  Weaving_extra::where([
-
-            ['type', '=',  'fabric type'],
-
-            ])->get();
-
-
-        $w_extras5     =  Weaving_extra::where([
-
-            ['type', '=',  'selvedge'],
-
-            ])->get();
+       
             
         /**************/
 
 
-        return view('admin.add_weaving', compact('companies', 'units', 'w_extras1', 'w_extras2', 'w_extras3', 'w_extras4', 'w_extras5'));
+        return view('admin.add_weaving', compact('companies', 'units', 'w_extras1', 'w_extras2', 'w_extras3'));
 
 
         //return view('admin.add_weaving');
@@ -294,42 +276,29 @@ class ProgramController extends Controller
 
         $w_extras1     =  Weaving_extra::where([
 
-            ['type', '=',  'warp count'],
+            ['type', '=',  'web_type'],
 
             ])->get();
 
 
         $w_extras2     =  Weaving_extra::where([
 
-            ['type', '=',  'warp type'],
+            ['type', '=',  'l_f'],
 
             ])->get();
 
 
         $w_extras3     =  Weaving_extra::where([
 
-            ['type', '=',  'warp blend'],
+            ['type', '=',  'language'],
 
             ])->get();
 
-
-        $w_extras4     =  Weaving_extra::where([
-
-            ['type', '=',  'fabric type'],
-
-            ])->get();
-
-
-        $w_extras5     =  Weaving_extra::where([
-
-            ['type', '=',  'selvedge'],
-
-            ])->get();
 
         /**************/
 
 
-        return view('admin.edit_weaving', compact('programs', 'companies', 'units', 'w_extras1', 'w_extras2', 'w_extras3', 'w_extras4', 'w_extras5'));
+        return view('admin.edit_weaving', compact('programs', 'companies', 'units', 'w_extras1', 'w_extras2', 'w_extras3'));
 
 
 
