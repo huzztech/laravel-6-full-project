@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section('title', 'Edit Program')
+@section('title', 'Edit Project')
 
 
 @section('specificpagecontent')
@@ -13,12 +13,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Edit Program ({{$programs->code}}) </h1>
+            <h1 class="m-0 text-dark">Edit Project ({{$programs->code}}) </h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="{{url('/home')}}">Home</a></li>
-              <li class="breadcrumb-item active">Edit Program</li>
+              <li class="breadcrumb-item active">Edit Project</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -79,13 +79,13 @@
                   </div>
                   
                   <div class="col-md-3 col-sm-12 col-xs-12 form-group">
-                  <label for="code">Code (STG-) <span class="required">*</span></label>
+                  <label for="code">Code <span class="required">*</span></label>
                   <input type="text" id="code" name="code" required="required" class="form-control col-md-12 col-xs-12" value="{{$programs->code}}" style="background: #ffffff;">
                  </div>
 
 
                  <div class="col-md-3 col-sm-12 col-xs-12 form-group">
-                  <label for="customer">Customer <span class="required">*</span> <a onclick="addnewcust()" style="cursor: pointer;"> <i class="fa fa-plus" style="font-size: 11px;"></i> </a></label>
+                  <label for="customer">Customer <span class="required">*</span></label>
             
 
             <select class="form-control col-md-12 col-xs-12" name="customer" required="" style="width: 97%; margin-bottom: 10px;">
@@ -105,7 +105,7 @@
 
 
             <div class="col-md-3 col-sm-12 col-xs-12 form-group">
-                      <label for="unit">Unit <span class="required">*</span> <a onclick="addnew_unit()" style="cursor: pointer;"> <i class="fa fa-plus" style="font-size: 11px;"></i> </a></label>
+                      <label for="unit">Origin <span class="required">*</span></label>
                       
                <select class="form-control col-md-12 col-xs-12" name="unit" required="" style="width: 97%; margin-bottom: 10px;">
                 
@@ -125,23 +125,18 @@
               
 
 
-              <div class="card-header" style="background-color: #007bff; color: white; border-radius: none; margin-bottom: 20px;">
-                  <h3 class="card-title" style="text-align: center; float: none;  font-weight: bold;">Construction</h3>
-                </div>
-
-
                 <div class="row">
 
                   <table width="100%" border="0" style="margin-left: 10px;">
             <tbody>
             <tr style="text-align: center;">
               <td style="padding-bottom: 10px;" width="10%">&nbsp;</td>
-              <td style="padding-bottom: 10px;"><strong>Count</strong> <a onclick="addnew_warpcount()" style="cursor: pointer;"> <i class="fa fa-plus" style="font-size: 11px;"></i> </a></td>
-              <td style="padding-bottom: 10px;"><strong>Yarn Type</strong> <a onclick="addnew_warptype()" style="cursor: pointer;"> <i class="fa fa-plus" style="font-size: 11px;"></i> </a></td>
-              <td style="padding-bottom: 10px;"><strong>Yarn Blend</strong> <a onclick="addnew_warpblend()" style="cursor: pointer;"> <i class="fa fa-plus" style="font-size: 11px;"></i> </a></td>
+              <td style="padding-bottom: 10px;"><strong>Type</strong></td>
+              <td style="padding-bottom: 10px;"><strong>Local / Foreign</strong> </td>
+              <td style="padding-bottom: 10px;"><strong>Language</strong> </td>
             </tr>
             <tr>
-              <td><strong>Warp  <span class="required">*</span></strong></td>
+              <td><strong>Website  <span class="required">*</span></strong></td>
               <td>
               
               <select class="form-control col-md-12 col-xs-12" name="warp_count" required="" style="width: 97%; margin-bottom: 10px;">
@@ -185,7 +180,7 @@
               </td>
             </tr>
             <tr>
-              <td><strong>Weft 1  <span class="required">*</span></strong></td>
+              <td><strong>Android  <span class="required">*</span></strong></td>
               <td>
                             
               <select class="form-control col-md-12 col-xs-12" name="weft1_count" style="width: 97%; margin-bottom: 10px;" required="">
@@ -230,7 +225,7 @@
               </td>
             </tr>
             <tr>
-              <td><strong>Weft 2</strong></td>
+              <td><strong>iOS</strong></td>
               <td>
               
               <select class="form-control col-md-12 col-xs-12" name="weft2_count" style="width: 97%; margin-bottom: 10px;">
@@ -276,7 +271,7 @@
               </td>
             </tr>
             <tr>
-              <td><strong>Weft 3</strong></td>
+              <td><strong>Online Software</strong></td>
               <td>                
               
               <select class="form-control col-md-12 col-xs-12" name="weft3_count" style="width: 97%; margin-bottom: 10px;">
@@ -322,7 +317,7 @@
               </td>
             </tr>
             <tr>
-              <td><strong>Weft 4</strong></td>
+              <td><strong>Desktop Software</strong></td>
               <td>
               
               <select class="form-control col-md-12 col-xs-12" name="weft4_count" style="width: 97%; margin-bottom: 10px;">
@@ -377,72 +372,6 @@
 
                  <div class="ln_solid" style="border-bottom: 1px solid #e5e5e5;margin: 20px 0; "></div>
 
-
-
-                <div class="row">
-                  
-
-                <div class="col-md-2 col-sm-12 col-xs-12 form-group">
-              <label for="w_end">End <span class="required">*</span></label>
-              <input type="text" id="w_end" name="w_end" required="required" class="form-control col-md-12 col-xs-12" value="{{$programs->w_end}}">
-              </div>
-
-              <div class="col-md-2 col-sm-12 col-xs-12 form-group">
-            <label for="w_pick">Pick <span class="required">*</span></label>
-            <input type="text" id="w_pick" name="w_pick" required="required" class="form-control col-md-12 col-xs-12" value="{{$programs->w_pick}}">
-            </div>
-
-
-            <div class="col-md-2 col-sm-12 col-xs-12 form-group">
-            <label for="w_width">Width " <span class="required">*</span></label>
-            <input type="text" id="w_width" name="w_width" required="required" class="form-control col-md-12 col-xs-12" value="{{$programs->w_width}}">
-            </div>
-
-            <div class="col-md-2 col-sm-12 col-xs-12 form-group">
-            <label for="w_fabric_type">Fabric Type <span class="required">*</span> <a onclick="addnew_fabrictype()" style="cursor: pointer;"> <i class="fa fa-plus" style="font-size: 11px;"></i> </a></label>
-            <select class="form-control col-md-12 col-xs-12" name="w_fabric_type" required="">
-                
-                <option value="">Select</option>
-                
-                @foreach($w_extras4 as $w_extra4)
-                
-                <option value="{{$w_extra4->name}}" {{ $programs->w_fabric_type == $w_extra4->name ? 'selected="selected"' : '' }}>{{$w_extra4->name}}</option>
-                
-                @endforeach
-                
-              </select>
-            </div>
-
-
-            <div class="col-md-2 col-sm-12 col-xs-12 form-group">
-            <label for="w_selvedge">Selvedge <span class="required">*</span> <a onclick="addnew_selvedge()" style="cursor: pointer;"> <i class="fa fa-plus" style="font-size: 11px;"></i> </a></label>
-            <select class="form-control col-md-12 col-xs-12" name="w_selvedge" required="">
-                
-                <option value="">Select</option>
-                
-                @foreach($w_extras5 as $w_extra5)
-                
-                <option value="{{$w_extra5->name}}" {{ $programs->w_selvedge == $w_extra5->name ? 'selected="selected"' : '' }}>{{$w_extra5->name}}</option>
-
-                @endforeach                     
-                
-              </select>
-            </div>
-
-
-            <div class="col-md-2 col-sm-12 col-xs-12 form-group">
-            <label for="w_writing">Writing <span class="required">*</span></label>
-            <select class="form-control col-md-12 col-xs-12" name="w_writing" required="">
-                
-                <option value="">Select</option>
-                <option value="Yes"  {{ $programs->w_writing == "Yes" ? 'selected="selected"' : '' }}>Yes</option>
-                <option value="No"  {{ $programs->w_writing == "No" ? 'selected="selected"' : '' }}>No</option>
-                
-              </select>
-            </div>
-
-
-                </div>
 
                 <div class="col-md-12 col-sm-12 col-xs-12 form-group">
               <label for="w_writing">Remarks <span class="required">*</span></label>

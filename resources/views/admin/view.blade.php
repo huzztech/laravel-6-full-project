@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section('title', 'View Programs')
+@section('title', 'View Projects')
 
 
 @section('specificpagecontent')
@@ -12,12 +12,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">View Programs</h1>
+            <h1 class="m-0 text-dark">View Projects</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="{{url('/home')}}">Home</a></li>
-              <li class="breadcrumb-item active">Programs</li>
+              <li class="breadcrumb-item active">Projects</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -56,13 +56,11 @@
                   <thead>
 
                 <tr>                          
-                 <th width="9%">Code</th>
-                 <th width="9%">Date</th>
-                 <th>Construction</th>
-                  <th width="8%">Quantity </th>
-                  <th width="8%">Customer </th>
-                  <th width="8%">Unit </th>
-                  <th width="7%">Status </th>
+                 <th >Code</th>
+                 <th>Date</th>
+                  <th>Customer </th>
+                  <th>Origin </th>
+                  <th>Status </th>
                 </tr>
                   </thead>
                   <tbody>
@@ -210,16 +208,9 @@
                 <tr>                          
                  <td><a style="color: black;" href='{{url("$further_path")}}'>{{$code_set}}</a></td>
                  <td>{{ \Carbon\Carbon::parse($program->set_date)->format('d-M-y')}}</td>
-                 <td>
-                   
-                  @php echo $warp_count; @endphpx@php echo $weft1_count; @endphp@php echo $weft2_count; @endphp@php echo $weft3_count; @endphp@php echo $weft4_count; @endphp/@php echo $w_end; @endphpx@php echo $w_pick; @endphp-@php echo $w_width; @endphp" @php echo $w_fabric_type; @endphp @php echo $w_selvedge; @endphp @php echo $w_writing; @endphp @php echo $remarks; @endphp
-
-
-                 </td>
-                  <td>{{$order_quantity}} </td>
                   <td>{{$program->company_fun['name']}} </td>
                   <td>{{$program->unit_fun['name']}} </td>
-                  <td>{{$numRows_out}} / {{$numRows_total}} </td>
+                  <td>{{$status}}</td>
                  </tr>
 
                 @endforeach

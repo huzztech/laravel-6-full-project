@@ -36,7 +36,7 @@
               <div class="inner">
                 <h3>150</h3>
 
-                <p>Programs</p>
+                <p>Project</p>
               </div>
               <div class="icon">
                 <i class="ion ion-bag"></i>
@@ -51,7 +51,7 @@
               <div class="inner">
                 <h3>2000</h3>
 
-                <p>Colors</p>
+                <p>Clients</p>
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
@@ -81,7 +81,7 @@
               <div class="inner">
                 <h3>15</h3>
 
-                <p>Code Images</p>
+                <p>Running Prjects</p>
               </div>
               <div class="icon">
                 <i class="ion ion-pie-graph"></i>

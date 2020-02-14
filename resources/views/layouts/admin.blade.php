@@ -214,7 +214,7 @@
               @endif">
               <i class="nav-icon fas fa-copy"></i>
               <p>
-                Program
+                Project
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
