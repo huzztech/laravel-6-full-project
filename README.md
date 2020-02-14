@@ -44,6 +44,58 @@ Beside Laravel, this project uses other tools like:
 - Composer
 - Import database file from db_for_import folder
 
+## Login Page
+
+<img src="https://github.com/huzztech/laravel-6-full-project/blob/master/screenshots/huzz1.png" width="100%" />
+
+## Register Page
+
+<img src="https://github.com/huzztech/laravel-6-full-project/blob/master/screenshots/huzz2.png" width="100%" />
+
+## Verify Email Message after Registration
+
+<img src="https://github.com/huzztech/laravel-6-full-project/blob/master/screenshots/huzz3.png" width="100%" />
+
+## Page after click on the link in email
+
+<img src="https://github.com/huzztech/laravel-6-full-project/blob/master/screenshots/huzz4.png" width="100%" />
+
+## Dashboard
+
+<img src="https://github.com/huzztech/laravel-6-full-project/blob/master/screenshots/huzz5.png" width="100%" />
+
+## Profile
+
+<img src="https://github.com/huzztech/laravel-6-full-project/blob/master/screenshots/huzz6.png" width="100%" />
+
+## Change Password
+
+<img src="https://github.com/huzztech/laravel-6-full-project/blob/master/screenshots/huzz7.png" width="100%" />
+
+## Add Program
+
+<img src="https://github.com/huzztech/laravel-6-full-project/blob/master/screenshots/huzz8.png" width="100%" />
+
+## View Program
+
+<img src="https://github.com/huzztech/laravel-6-full-project/blob/master/screenshots/huzz9.png" width="100%" />
+
+## Program Detail
+
+<img src="https://github.com/huzztech/laravel-6-full-project/blob/master/screenshots/huzz10.png" width="100%" />
+
+## Search Result
+
+<img src="https://github.com/huzztech/laravel-6-full-project/blob/master/screenshots/huzz11.png" width="100%" />
+
+## Edit Program
+
+<img src="https://github.com/huzztech/laravel-6-full-project/blob/master/screenshots/huzz12.png" width="100%" />
+
+## Delete Confirmation
+
+<img src="https://github.com/huzztech/laravel-6-full-project/blob/master/screenshots/huzz13.png" width="100%" />
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
