@@ -342,12 +342,6 @@ class ProgramController extends Controller
         $programs->weft4_count      =  $request->weft4_count;
         $programs->weft4_yarn_type  =  $request->weft4_yarn_type;
         $programs->weft4_yarn_blend =  $request->weft4_yarn_blend;
-        $programs->w_end            =  $request->w_end;
-        $programs->w_pick           =  $request->w_pick;
-        $programs->w_width          =  $request->w_width;
-        $programs->w_fabric_type    =  $request->w_fabric_type;
-        $programs->w_selvedge       =  $request->w_selvedge;
-        $programs->w_writing        =  $request->w_writing;
         $programs->remarks          =  $request->remarks;
         $programs->set_date         =  $request->set_date;  
         
