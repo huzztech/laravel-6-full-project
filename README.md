@@ -72,15 +72,15 @@ Beside Laravel, this project uses other tools like:
 
 <img src="https://github.com/huzztech/laravel-6-full-project/blob/master/screenshots/huzz7.png" width="100%" />
 
-## Add Program
+## Add Project
 
 <img src="https://github.com/huzztech/laravel-6-full-project/blob/master/screenshots/huzz8.png" width="100%" />
 
-## View Program
+## View Project
 
 <img src="https://github.com/huzztech/laravel-6-full-project/blob/master/screenshots/huzz9.png" width="100%" />
 
-## Program Detail
+## Project Detail
 
 <img src="https://github.com/huzztech/laravel-6-full-project/blob/master/screenshots/huzz10.png" width="100%" />
 
@@ -88,7 +88,7 @@ Beside Laravel, this project uses other tools like:
 
 <img src="https://github.com/huzztech/laravel-6-full-project/blob/master/screenshots/huzz11.png" width="100%" />
 
-## Edit Program
+## Edit Project
 
 <img src="https://github.com/huzztech/laravel-6-full-project/blob/master/screenshots/huzz12.png" width="100%" />
 
